@@ -1,0 +1,75 @@
+{
+	"id": "a97d0c16-9dff-43ac-84a7-d2aabd314a69",
+	"name": "ApiSkyEng21_10",
+	"timestamp": "2025-10-21T16:23:31.072Z",
+	"collection_id": "47960389-8fb2bacb-eafd-495f-96e9-6e3272b8d809",
+	"folder_id": "47960389-92662318-5496-48e7-adda-b9b5eed637d6",
+	"environment_id": "47960389-96b0cabf-8be6-4492-921e-7343d60e6bbf",
+	"totalPass": 1,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-10-21T16:23:28.772Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5aebe4aa-314b-4740-886a-27421ba00191",
+			"name": "Получение расписания для массового удаления",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/events",
+			"time": 1101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"✅ Статус ответа 200": true
+			},
+			"testPassFailCounts": {
+				"✅ Статус ответа 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1101
+			],
+			"allTests": [
+				{
+					"✅ Статус ответа 200": true
+				}
+			]
+		},
+		{
+			"id": "afb7f246-eeec-402f-b63b-2bbc6f83efaf",
+			"name": "Массовое удаление событий",
+			"url": "https://api-teachers.skyeng.ru/v2/schedule/removePersonal",
+			"time": 247,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				247
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1348,
+	"collection": {
+		"requests": [
+			{
+				"id": "5aebe4aa-314b-4740-886a-27421ba00191",
+				"method": "POST"
+			},
+			{
+				"id": "afb7f246-eeec-402f-b63b-2bbc6f83efaf",
+				"method": "POST"
+			}
+		]
+	}
+}
