@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Postman
+*.log
+*.tmp
+!*.postman_collection.json
+!*.postman_environment.json
+
+# IDE
+.idea/
+.vscode/
